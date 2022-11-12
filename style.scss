@@ -57,15 +57,6 @@ body {
     overflow-x: hidden;
 }
 
-.grid {
-    @include media(1024px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        display: grid;
-        gap: 3rem;
-    }
-}
-
-
 
 /*----------------------------
 Video BG
@@ -92,8 +83,7 @@ Video BG
 
 .logo,
 header,
-nav h2,
-.card-description {
+nav h2 {
     padding: 0 5vw;
 
     @include media (1024px) {
@@ -171,8 +161,6 @@ header {
 }
 
 
-
-
 /*----------------------------
 Nav setion
 *-----------------------------*/
@@ -245,8 +233,6 @@ footer {
     }
 }
 
-.contact,
-.stuff,
-.more-stuff {
+.footer_divs {
     @include flex(center, start, column, 0.4rem);
 }

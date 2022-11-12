@@ -22,14 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: grid;
-    gap: 3rem;
-  }
-}
-
 /*----------------------------
 Video BG
 *-----------------------------*/
@@ -54,16 +46,14 @@ Video BG
 .logo,
 header,
 nav h2,
-nav .last-link,
-.card-description {
+nav .last-link {
   padding: 0 5vw;
 }
 @media (min-width: 1024px) {
   .logo,
 header,
 nav h2,
-nav .last-link,
-.card-description {
+nav .last-link {
     padding: 0 11vw;
   }
 }
@@ -214,9 +204,7 @@ footer img {
   }
 }
 
-.contact,
-.stuff,
-.more-stuff {
+.footer_divs {
   display: flex;
   justify-content: center;
   align-items: start;
