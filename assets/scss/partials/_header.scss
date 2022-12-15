@@ -1,0 +1,52 @@
+
+.header {
+    @include flex(center, start, column, 2rem);
+    margin-top: 10%;
+    color: $white;
+    position: relative;
+    @media (min-width:820px) {
+        width: 55%;
+    }
+
+    &__h1 {
+        font-size:#{"min(max(1.7rem, 6vw), 2.2rem)"};
+        color: $orange;
+    }
+
+    &__p {
+        line-height: 2rem;
+        font-size:#{"min(max(1.9rem, 3.9vw), 1.2rem)"};
+    }
+
+    &__search {
+        @include flex(start, center, row, 0.3rem);
+        width: 100%;
+        margin-top: 2rem;
+    
+        @media (min-width:820px) {
+            @include position(absolute, 68%, -100%);
+        }
+    
+        .header__input {
+            width: 90%;
+            font-size:#{"min(max(1.9rem, 3.9vw), 1.2rem)"};
+            background: transparent;
+            padding-bottom: 10px;
+            color: $orange;
+            border-bottom: 2px solid $white;
+    
+            @media (min-width:820px) {
+                width: 50%;
+            }
+    
+            &::placeholder {
+                color: $white;
+            }
+        }
+    
+        .header__span {
+            font-size: 2.5rem;
+            cursor: pointer
+        }
+    }
+}
