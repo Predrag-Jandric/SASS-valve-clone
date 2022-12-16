@@ -1,12 +1,19 @@
 
+@use 'mixins-&-vars' as *;
+
+
 .nav {
     @include flex (center, start, column, 1rem);
     margin: 5rem 0;
 
     &__h2 {
-        @include text(4.3rem, 900, $orange);
+        @include text(#{"min(max(3rem, 10vw), 4.3rem)"}, 900, $orange);
+        // font-size:#{"min(max(3rem, 10vw), 4.3rem)"};
+        // color: $orange;
+        // font-weight: 900;
         cursor: pointer;
         transition: all 0.3s ease-in-out; 
+
 
         &:hover {
             color: $white;

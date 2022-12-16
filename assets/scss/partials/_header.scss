@@ -1,4 +1,7 @@
 
+@use 'mixins-&-vars' as *;
+
+
 .header {
     @include flex(center, start, column, 2rem);
     margin-top: 10%;
@@ -9,8 +12,7 @@
     }
 
     &__h1 {
-        font-size:#{"min(max(1.7rem, 6vw), 2.2rem)"};
-        color: $orange;
+        @include text(#{"min(max(1.7rem, 6vw), 2.2rem)"}, 0, $orange);
     }
 
     &__p {
@@ -29,10 +31,9 @@
     
         .header__input {
             width: 90%;
-            font-size:#{"min(max(1.9rem, 3.9vw), 1.2rem)"};
+            @include text(#{"min(max(1.9rem, 3.9vw), 1.2rem)"}, 0, $orange);
             background: transparent;
             padding-bottom: 10px;
-            color: $orange;
             border-bottom: 2px solid $white;
     
             @media (min-width:820px) {

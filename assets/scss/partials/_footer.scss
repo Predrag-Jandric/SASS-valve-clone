@@ -1,4 +1,7 @@
 
+@use 'mixins-&-vars' as *;
+
+
 .footer {
     @include flex(center, start, column, 3rem);
     background-color: $orange;

@@ -77,6 +77,7 @@ body {
 }
 .header__h1 {
   font-size: min(max(1.7rem, 6vw), 2.2rem);
+  font-weight: 0;
   color: #f74843;
 }
 .header__p {
@@ -104,9 +105,10 @@ body {
 .header__search .header__input {
   width: 90%;
   font-size: min(max(1.9rem, 3.9vw), 1.2rem);
+  font-weight: 0;
+  color: #f74843;
   background: transparent;
   padding-bottom: 10px;
-  color: #f74843;
   border-bottom: 2px solid white;
 }
 @media (min-width: 820px) {
@@ -131,7 +133,7 @@ body {
   margin: 5rem 0;
 }
 .nav__h2, .nav__last-link {
-  font-size: 4.3rem;
+  font-size: min(max(3rem, 10vw), 4.3rem);
   font-weight: 900;
   color: #f74843;
   cursor: pointer;
