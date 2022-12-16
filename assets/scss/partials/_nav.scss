@@ -8,9 +8,6 @@
 
     &__h2 {
         @include text(#{"min(max(3rem, 10vw), 4.3rem)"}, 900, $orange);
-        // font-size:#{"min(max(3rem, 10vw), 4.3rem)"};
-        // color: $orange;
-        // font-weight: 900;
         cursor: pointer;
         transition: all 0.3s ease-in-out; 
 
