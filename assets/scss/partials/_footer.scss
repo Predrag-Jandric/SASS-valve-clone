@@ -1,0 +1,46 @@
+
+.footer {
+    @include flex(center, start, column, 3rem);
+    background-color: $orange;
+    padding: 3rem 5%;
+    color: $white;
+
+    @media (min-width: 820px) {
+        @include flex(space-between, start, row, 1rem);
+        padding: 3rem 11%;
+    }
+
+    &__column {
+        @include flex(center, start, column, 0.4rem);
+
+        .footer__h3 {
+            @include text(1.7rem, 500, $white);
+            margin-bottom: 0.5rem;
+    
+            @media (min-width: 820px) {
+                font-size: 0.8rem;
+            }
+        }
+
+        .footer__a {
+            @include text(1.6rem, auto, $black);
+    
+            @media (min-width: 820px) {
+                @include text(0.8rem, 500, $black);
+            }
+    
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__img {
+        width: 300px;
+
+        @media (min-width: 820px) {
+            width: 200px;
+        }
+    }
+}
+

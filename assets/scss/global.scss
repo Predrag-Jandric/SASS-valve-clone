@@ -65,7 +65,7 @@ body {
 .video-overlay {
     @include position(fixed, 0, 0, 0, 0);
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     z-index: -1;
 }
 
@@ -88,7 +88,3 @@ body {
         width: 150px;
     }
 }
-
-
-
-
