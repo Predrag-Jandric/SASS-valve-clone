@@ -1,0 +1,64 @@
+
+.nav {
+    @include flex (center, start, column, 1rem);
+    margin: 5rem 0;
+
+    &__h2 {
+        @include text(4.3rem, 900, $orange);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; 
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__last-link {
+        @extend .nav__h2;
+    }
+
+    &__card-wrapper {
+        @include flex(flex-start, center, row);
+        background-color: $nav__card-wrapper;
+        width: 100vw;
+        height: 0;
+        overflow: hidden;
+        transition: all .4s linear;
+    
+
+        &.JS-toggle-class {
+            padding: 7rem 0;
+            height: auto;
+            margin: 3rem 0;
+
+            @media(min-width:820px) {
+                padding-left: 0;
+            }
+        }
+
+        .nav__card__content {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+            padding: 0 8vw;
+            font-size: 1.5rem;
+
+            @media(min-width:820px) {
+                grid-template-columns: repeat(4, 1fr);
+                padding: 0 11vw;
+            }
+
+            .nav__a {
+                @include text(1.7rem, 900, $black);
+                cursor: pointer;
+                @media(min-width:820px){
+                    font-size: 1.2rem;
+                }
+
+                .nav__span {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

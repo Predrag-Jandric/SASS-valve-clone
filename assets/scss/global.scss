@@ -1,4 +1,11 @@
 
+//  variables
+$orange: #f74843;
+$white: white;
+$black: #141414;
+$nav__card-wrapper: #ededed;
+
+
 // mixins
 @mixin flex ($justify, $align, $direction, $gap: 0px) {
     display: flex;
@@ -34,3 +41,54 @@
     border: none;
     outline: none;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+.grid {
+    @media (min-width:820px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+        gap: 3rem;
+    }
+}
+
+#videoBackground {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video-overlay {
+    @include position(fixed, 0, 0, 0, 0);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+.logo, .header, .nav__h2,
+.nav__last-link,
+.nav__card-wrapper {
+    padding: 0 7vw;
+
+    @media (min-width:820px) {
+        padding: 0 10vw;
+    }
+}
+
+.logo {
+    padding-top: 3rem;
+    margin-bottom: 14%;
+
+    img {
+        width: 150px;
+    }
+}
+
+
+
+
