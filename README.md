@@ -1,6 +1,6 @@
 # 🛠 SASS - Valve Corp. Clone (mobile first)
 
-# 🔗 [Live Preview](https://flourishing-kitsune-4259af.netlify.app/)
+# 🔗 [Live Preview](https://valve-clone.netlify.app/)
 # 🔗 [Original page](https://www.valvesoftware.com/en/)
 ![Design preview](preview.gif)
 
